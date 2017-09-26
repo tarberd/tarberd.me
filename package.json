@@ -8,7 +8,20 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "^1.9.42",
-    "gatsby-link": "^1.4.1"
-  }
+    "gatsby": "^1.9.45",
+    "gatsby-link": "^1.6.17",
+    "typography": "^0.16.6"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarberd/tarberd.me.git"
+  },
+  "author": "Bernardo Ferrari <bernardo.mferrari@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/tarberd/tarberd.me/issues"
+  },
+  "homepage": "https://github.com/tarberd/tarberd.me#readme"
 }
