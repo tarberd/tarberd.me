@@ -3,14 +3,18 @@ import Typography from 'typography'
 
 const typography = new Typography({ baseFontSize: '24px' })
 
-typography.injectStyles()
-
 class Index extends React.Component {
+
     render() {
+
+        typography.injectStyles()
+
         return (
             <div style={{ margin: '3rem auto', maxWidth: 600 }}>
                 Welcome to my blog :)
-            </div>)
+                OIE ANGELA!
+            </div>
+        )
     }
 }
 
