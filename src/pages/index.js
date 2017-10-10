@@ -1,21 +1,24 @@
-import React from "react"
-import Typography from 'typography'
+import React from 'react'
+import Link from 'gatsby-link'
+import basic_typo from './typography/basic_typo.js'
 
-const typography = new Typography({ baseFontSize: '24px' })
-
-class Index extends React.Component {
-
-    render() {
-
-        typography.injectStyles()
-
-        return (
-            <div style={{ margin: '3rem auto', maxWidth: 600 }}>
-                Welcome to my blog :)
-                OIE ANGELA!
-            </div>
-        )
-    }
+const header_style = {
+    width: '100%', 
+    textAlign: 'center'
 }
 
-export default Index
+const Header = (props) => 
+    <div style={props.style}>
+        <h1>Call It Done! I Guess ...</h1>
+    </div>
+
+const Body = props => 
+    <div></div>
+
+const Call_it_done = (props) =>
+    <div>
+        <Header style={header_style} />
+        <Body />
+    </div>
+
+export default Call_it_done

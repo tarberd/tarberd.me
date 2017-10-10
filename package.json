@@ -8,9 +8,10 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "^1.9.45",
-    "gatsby-link": "^1.6.17",
-    "typography": "^0.16.6"
+    "gatsby": "^1.9.55",
+    "gatsby-link": "^1.6.20",
+    "typography": "^0.16.6",
+    "typography-theme-fairy-gates": "^0.15.11"
   },
   "version": "1.0.0",
   "main": "index.js",
