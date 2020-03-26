@@ -1,0 +1,25 @@
+---
+layout: base
+---
+<article class='post-list'>
+
+  <head>
+    <h1>Things I had to say recently</h1>
+  </head>
+
+  {% for post in site.posts %}
+  <section class='post-item'>
+    <a href="{{ post.url }}">
+      <h2>{{ post.title }}</h2>
+    </a>
+    <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>
+      {{ post.date | date: "%Y-%m-%d" }}
+    </time>
+    <p>{{ post.excerpt }}</p>
+  </section>
+  {% endfor %}
+
+  <footer>
+  </footer>
+
+</article>
