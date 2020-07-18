@@ -48,11 +48,9 @@
 
 :root {
   --root-font-family: 'Lato', sans-serif;
-  --root-font-size: 20px;
+  --root-font-size: 16px;
   --root-font-weight: 400;
 
-  --max-line-lenght: ;
-  --min-line-lenght: ;
   --interparagraph-spacing: 1em;
   --interline-spacing: 1.45;
 }
@@ -75,32 +73,34 @@ html {
 }
 
 h1 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: 700;
 
   margin-bottom: var(--interparagraph-spacing);
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 1.1em;
   font-weight: 700;
 
   margin-bottom: var(--interparagraph-spacing);
 }
 
 h3 {
-  font-size: 1.00rem;
+  font-size: 1.00em;
   font-weight: 700;
 
   margin-bottom: var(--interparagraph-spacing);
 }
 
 p {
+  font-size: 1.00em;
   line-height: var(--interline-spacing);
   margin-bottom: var(--interparagraph-spacing);
 }
 
 a {
+  font-size: 1.00em;
   color: #292966;
   text-decoration: none;
 }
@@ -128,19 +128,8 @@ body {
   text-align: center;
 }
 
-.page-header p {
-  max-width: 600px;
-  text-align: center;
-  font-weight: 300;
-  font-style: italic;
-}
-
 .page-header nav {
   width: 100%;
-}
-
-.page-header nav h1:first-of-type {
-  display: none;
 }
 
 .page-header nav ul {
@@ -162,6 +151,16 @@ body {
   font-size: 0.8rem;
 }
 
+.business-card-contacts ul li::before {
+  margin-right: 0.7em;
+  content: "_>";
+  float: left;
+}
+
+.business-card-contacts ul li p{
+  margin-bottom: 0.6em;
+}
+
 .avatar {
   margin-bottom: 1rem;
   max-width: 100%;
@@ -176,6 +175,10 @@ body {
 }
 
 @media only screen and (min-width: 701px) and (max-width: 960px) {
+  html {
+    font-size: 18px;
+  }
+
   .content main {
     width: 70%;
   }
@@ -188,6 +191,10 @@ body {
 }
 
 @media only screen and (min-width: 961px) {
+  html {
+    font-size: 20px;
+  }
+
   body {
     width: 960px;
     margin: 0 auto;
